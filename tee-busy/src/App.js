@@ -10,7 +10,7 @@ function App() {
     }, []);
 
     const fetchProducts = () => {
-        fetch('http://localhost:3000/products') // Replace with your backend URL
+        fetch('http://localhost:3000/products') 
             .then(response => response.json())
             .then(data => setProducts(data))
             .catch(error => {
